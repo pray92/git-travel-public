@@ -1,0 +1,29 @@
+#!/usr/bin/env python3
+
+import os
+import subprocess
+import sys
+
+jar_name = 'git-travel-HEAD-SNAPSHOT-all-deps.jar'
+
+def main():
+    maven_command = ['mvn', 'package', '-q', '-DskipTests']
+    bin_dir = os.path.dirname(os.path.abspath(__file__))
+    jar_file = os.path.join(os.path.dirname(bin_dir), 'core', 'target', jar_name)
+    gittravel_command = ['java', '-jar', jar_file]
+    working_dir = os.path.dirname(bin_dir)
+    try:
+        process = subprocess.run(maven_command, cwd=working_dir)
+        if process.returncode != 0:
+            print('Maven packaging building failed.')
+            exit(1)
+
+        gittravel_command.extend(sys.argv[1:])
+        process = subprocess.run(gittravel_command)
+        exit(process.returncode)
+    except KeyboardInterrupt:
+        print('Operation cancelled.')
+    exit(1)
+
+if __name__ == '__main__':
+    main()

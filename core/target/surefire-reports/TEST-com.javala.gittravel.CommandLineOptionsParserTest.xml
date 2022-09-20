@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="10" failures="0" name="com.javala.gittravel.CommandLineOptionsParserTest" time="0.028" errors="0" skipped="0">
+  <properties>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="java.vm.version" value="11.0.11+9"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/adoptopenjdk-11.jdk/Contents/Home/lib"/>
+    <property name="gopherProxySet" value="false"/>
+    <property name="maven.multiModuleProjectDirectory" value="/Users/redgem92/Desktop/Projects/git-travel"/>
+    <property name="java.vm.vendor" value="AdoptOpenJDK"/>
+    <property name="java.vendor.url" value="https://adoptopenjdk.net/"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="path.separator" value=":"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="user.country" value="KR"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/Users/redgem92/Desktop/Projects/git-travel"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="java.runtime.version" value="11.0.11+9"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.io.tmpdir" value="/var/folders/7g/4_7ts4dn4qddjn56pbwsf0th0000gn/T/"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="classworlds.conf" value="/Users/redgem92/maven/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/redgem92/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="maven.conf" value="/Users/redgem92/maven/conf"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="java.class.version" value="55.0"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="11.3"/>
+    <property name="library.jansi.path" value="/Users/redgem92/maven/lib/jansi-native"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="user.home" value="/Users/redgem92"/>
+    <property name="user.timezone" value="Asia/Seoul"/>
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.specification.version" value="11"/>
+    <property name="user.name" value="redgem92"/>
+    <property name="java.class.path" value="/Users/redgem92/maven/boot/plexus-classworlds-2.6.0.jar"/>
+    <property name="java.vm.specification.version" value="11"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher package"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/adoptopenjdk-11.jdk/Contents/Home"/>
+    <property name="user.language" value="ko"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="11.0.11"/>
+    <property name="java.vendor" value="AdoptOpenJDK"/>
+    <property name="maven.home" value="/Users/redgem92/maven"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.version.date" value="2021-04-20"/>
+    <property name="java.vendor.url.bug" value="https://github.com/AdoptOpenJDK/openjdk-support/issues"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="java.vendor.version" value="AdoptOpenJDK-11.0.11+9"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase classname="com.javala.gittravel.CommandLineOptionsParserTest" name="setBranchNameInitOnly" time="0.016"/>
+  <testcase classname="com.javala.gittravel.CommandLineOptionsParserTest" name="travel" time="0"/>
+  <testcase classname="com.javala.gittravel.CommandLineOptionsParserTest" name="travelCount" time="0"/>
+  <testcase classname="com.javala.gittravel.CommandLineOptionsParserTest" name="help" time="0"/>
+  <testcase classname="com.javala.gittravel.CommandLineOptionsParserTest" name="here" time="0"/>
+  <testcase classname="com.javala.gittravel.CommandLineOptionsParserTest" name="init" time="0"/>
+  <testcase classname="com.javala.gittravel.CommandLineOptionsParserTest" name="move" time="0"/>
+  <testcase classname="com.javala.gittravel.CommandLineOptionsParserTest" name="defaults" time="0.012"/>
+  <testcase classname="com.javala.gittravel.CommandLineOptionsParserTest" name="travelBack" time="0"/>
+  <testcase classname="com.javala.gittravel.CommandLineOptionsParserTest" name="setCommitHashInMoveOnly" time="0"/>
+</testsuite>

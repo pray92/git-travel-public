@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+JAR_NAME="git-travel-HEAD-SNAPSHOT-all-deps.jar"
+
+java -jar "$GIT_TRAVEL_HOME/core/target/$JAR_NAME" "$@"

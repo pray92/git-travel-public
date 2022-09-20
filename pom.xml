@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project
+    xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.javala.gittravel</groupId>
+  <artifactId>git-travel-parent</artifactId>
+  <packaging>pom</packaging>
+  <version>HEAD-SNAPSHOT</version>
+
+  <modules>
+    <module>core</module>
+  </modules>
+
+  <name>Git Travel Parent</name>
+
+  <url>https://github.com/javala/git-travel</url>
+
+  <inceptionYear>2022</inceptionYear>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <java.version>11</java.version>
+    <guava.version>31.1-jre</guava.version>
+    <jgit.version>6.1.0.202203080745-r</jgit.version>
+    <junit.version>4.13.2</junit.version>
+    <logback.version>1.2.3</logback.version>
+    <slf4j.version>1.7.26</slf4j.version>
+  </properties>
+
+  <dependencyManagement>
+    <dependencies>
+      <!-- Required runtime dependencies -->
+      <dependency>
+        <groupId>com.google.guava</groupId>
+        <artifactId>guava</artifactId>
+        <version>${guava.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.eclipse.jgit</groupId>
+        <artifactId>org.eclipse.jgit</artifactId>
+        <version>${jgit.version}</version>
+      </dependency>
+
+      <!-- LOGGING : slf4j issue in shade see : https://stackoverflow.com/questions/28754323/slf4j-with-logback-still-prompt-failed-to-load-class-org-slf4j-impl-staticlogge -->
+      <dependency>
+          <groupId>ch.qos.logback</groupId>
+          <artifactId>logback-classic</artifactId>
+          <version>${logback.version}</version>
+      </dependency>
+      <dependency>
+          <groupId>ch.qos.logback</groupId>
+          <artifactId>logback-core</artifactId>
+          <version>${logback.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.slf4j</groupId>
+        <artifactId>slf4j-api</artifactId>
+        <version>${slf4j.version}</version>
+      </dependency>
+
+      <!-- Test dependencies -->
+      <dependency>
+        <groupId>junit</groupId>
+        <artifactId>junit</artifactId>
+        <version>${junit.version}</version>
+        <scope>test</scope>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
+
+
+  <build>
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <artifactId>maven-compiler-plugin</artifactId>
+          <version>3.10.1</version>
+          <configuration>
+            <source>${java.version}</source>
+            <target>${java.version}</target>
+          </configuration>
+        </plugin>
+        <plugin>
+          <artifactId>maven-jar-plugin</artifactId>
+          <version>3.2.2</version>
+        </plugin>
+        <plugin>
+          <artifactId>maven-shade-plugin</artifactId>
+          <version>3.3.0</version>
+        </plugin>
+      </plugins>
+    </pluginManagement>
+  </build>
+</project>
